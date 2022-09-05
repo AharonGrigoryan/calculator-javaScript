@@ -67,7 +67,7 @@ function performAnAction(out) {
   return out.textContent;
 }
 
-function Ispercent(out) {
+function isPercent(out) {
   if (firstNumber != "" && sign === "x" && secondNumber != "") {
     firstNumber = (firstNumber * secondNumber) / 100;
     return (out.textContent = firstNumber);
@@ -84,4 +84,4 @@ function allClear(out) {
   out.textContent = 0;
 }
 
-export { checkKey, checkAction, allClear, performAnAction, Ispercent };
+export { checkKey, checkAction, allClear, performAnAction, isPercent };

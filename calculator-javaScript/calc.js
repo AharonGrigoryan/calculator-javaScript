@@ -3,7 +3,7 @@ import {
   checkAction,
   allClear,
   performAnAction,
-  Ispercent,
+  isPercent,
 } from "./calcFun.mjs";
 
 const out = document.querySelector(".calc-screen p");
@@ -24,7 +24,7 @@ document.querySelector(".buttons").onclick = (event) => {
     performAnAction(out);
   }
   if (key === "%") {
-    Ispercent(out);
+    isPercent(out);
   }
 
 };
