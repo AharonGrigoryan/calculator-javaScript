@@ -1,0 +1,58 @@
+.calc {
+  background: #000;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px #4f4f4f;
+  color: #fff;
+  font-family: Arial;
+  height: 500px;
+  margin: 50px auto;
+  padding: 18px;
+  width: 300px;
+}
+.calc .calc-screen {
+  align-items: end;
+  display: grid;
+  height: 125px;
+  justify-items: end;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+.calc .calc-screen p {
+  font-size: 4rem;
+  margin: 0;
+  text-align: right;
+}
+.calc .buttons {
+  display: grid;
+  grid-gap: 7px;
+  grid-template-areas: "ac plus-minus percent division" "seven eight nine multi" "four five six minus" "one two three plus" "zero zero dot equal";
+  justify-items: center;
+}
+.calc .buttons .btn {
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  user-select: none;
+  width: 60px;
+}
+.calc .buttons .btn.bg-grey {
+  background: #a6a6a6;
+}
+.calc .buttons .btn.bg-orange {
+  background: #ff9501;
+}
+.calc .buttons .btn:hover {
+  filter: brightness(130%);
+}
+.calc .buttons .btn:active {
+  filter: brightness(90%);
+}
+.calc .buttons .btn.zero {
+  border-radius: 34px;
+  grid-area: zero;
+  width: 100%;
+}
